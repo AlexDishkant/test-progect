@@ -1,0 +1,18 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+app:
+  resource: '@AppBundle/Controller/'
+  type: annotation
+
+api_v1_catalog:
+  prefix: /catalog
+  resource: '@AppBundle/Resources/config/catalog.yml'
+
+api_v1_product:
+  prefix: api/v1/product
+  resource: '@AppBundle/Resources/config/product.yml'
+
+api_v1_productFilters:
+  prefix: api/v1/productFilters
+  resource: '@AppBundle/Resources/config/productFilters.yml'

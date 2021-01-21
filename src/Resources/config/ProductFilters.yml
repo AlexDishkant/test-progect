@@ -1,0 +1,10 @@
+api_index_action_list:
+  path: /index
+  defaults: {_controller: AppBundle:Library:index, _format: json}
+  methods: [GET]
+
+api_create_fields_list:
+  path: /create
+  defaults: {_controller: AppBundle:Library:create, _format: json}
+  methods: [POST]
+
